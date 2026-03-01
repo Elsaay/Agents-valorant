@@ -1,0 +1,49 @@
+.agent-card {
+  background: #ffffff78;
+  border: 1px solid rgba(180, 123, 128, 0.4);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.agent-card:hover {
+  box-shadow: 0 10px 25px #ffffffa4;
+  /* transform: scale(1.08);
+  transform: translateY(-10px) scale(1.03); */
+  /* transform: translateY(-10px) scale(1.03);
+  border-color: #ff4655;
+  box-shadow: 0 15px 40px rgba(255, 70, 85, 0.35); */
+}
+
+.agent-card img {
+  width: 100%;
+  max-width: 329px;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+.agent-card:hover img {
+  transform: scale(1.08);
+}
+
+.agent-card h3{
+    font-size: 35px;
+}
+.agent-card h3 {
+  color: white;
+  margin-top: 15px;
+  font-size: 22px;
+}
+.agent-card .role {
+  color: #911620;
+  font-weight: bold;
+  margin: 6px 0;
+}
+/* Description */
+.agent-card .description {
+  color: #ffffffbd;
+  font-size: 18px;
+  line-height: 130%;
+}

@@ -1,0 +1,13 @@
+.agent-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
+    gap: 70px;
+    padding: 0 40px;
+}
+
+
+@media (max-width: 768px) {
+  .agent-list {
+    padding: unset;
+  }
+}

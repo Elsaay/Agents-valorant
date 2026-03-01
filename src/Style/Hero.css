@@ -1,0 +1,116 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /* background: radial-gradient( rgb(27 17 54 / 90%) 0%, rgb(27 8 76 / 95%) 40%, rgba(5, 2, 15, 1) 100%);
+  background: radial-gradient(rgb(35 26 60 / 88%) 0%, rgb(1 11 81 / 95%) 40%, rgb(7 2 22) 100%); */
+  background: linear-gradient(90deg,rgba(217, 201, 239, 1) 27%, rgba(48, 4, 120, 1) 99%);
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  font-family: sans-serif;
+  background: linear-gradient(
+    90deg,
+    #E6D649,
+    #D13857,
+    #483782
+  );
+
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 8s ease infinite;
+
+  text-shadow:
+    0 0 15px rgba(209, 56, 87, 0.4),
+    0 0 30px rgba(72, 55, 130, 0.3);
+
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(255,70,85,0.15), transparent 40%),
+              radial-gradient(circle at 70% 60%, rgba(255,122,24,0.1), transparent 40%);
+  animation: floatBg 8s ease-in-out infinite alternate;
+  z-index: 0;
+}
+.particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(218, 203, 39, 0.7);
+  border-radius: 50%;
+  animation: floatParticle 12s linear infinite;
+  opacity: 0.6;
+}
+.particles span:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.7);
+  animation-duration: 15s;
+}
+
+.particles span:nth-child(3n) {
+  animation-duration: 18s;
+  width: 4px;
+  height: 4px;
+}
+
+.particles span:nth-child(5n) {
+  animation-duration: 20s;
+}
+
+@keyframes floatBg {
+  from { transform: translateY(-10px); }
+  to { transform: translateY(10px); }
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 8px rgba(209, 56, 87, 0.5),
+      0 0 20px rgba(72, 55, 130, 0.4);
+  }
+
+  50% {
+    text-shadow:
+      0 0 25px rgba(209, 56, 87, 0.8),
+      0 0 50px rgba(72, 55, 130, 0.6);
+  }
+
+  100% {
+    text-shadow:
+      0 0 8px rgba(209, 56, 87, 0.5),
+      0 0 20px rgba(72, 55, 130, 0.4);
+  }
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(-10vh) translateX(50px);
+  }
+}
