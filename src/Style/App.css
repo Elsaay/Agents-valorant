@@ -1,17 +1,19 @@
  html, body {
   /* margin: 0;
-  padding: 0;
-  overflow-x: hidden; */
+  padding: 0; 
+  overflow-x: hidden;  */
 }
+
+/* * {
+  outline: 1px solid red;
+} */
 body{
     margin-top: 0px;
     overflow-x: hidden;
-    background: #E6D649;
-    background: linear-gradient(90deg,rgba(230, 214, 73, 1) 0%, rgba(209, 56, 87, 1) 50%, rgba(72, 55, 130, 1) 100%);
-    background:linear-gradient(90deg, rgb(94 86 12) 0%, rgb(70 9 21) 50%, rgb(18 7 56) 100%);
+    background: #E6D649; 
     background: linear-gradient(90deg,rgba(217, 201, 239, 1) 27%, rgba(48, 4, 120, 1) 99%);
 }
-.container{padding-top: 0px;}
+.container{padding-top: 0px;overflow-x: hidden;}
 h2{
     text-align: center;
     margin: 80px auto;

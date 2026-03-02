@@ -38,16 +38,16 @@ const App = () => {
     
     <div className="container">
       <Hero />
-      <motion.h2 initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Duelists</motion.h2>
+      <motion.h2 initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Duelists</motion.h2>
       <AgentList agents={duelists} onSelectAgent={setSelectedAgent} />
       <motion.h2 initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Initiators</motion.h2>
       <AgentList agents={initiators} onSelectAgent={setSelectedAgent} />
-      <motion.h2 initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Controller</motion.h2>
+      <motion.h2 initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Controller</motion.h2>
       <AgentList agents={controller} onSelectAgent={setSelectedAgent} />
       <motion.h2 initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ once: true }}>Sentinals</motion.h2>
       <AgentList agents={sentinals} onSelectAgent={setSelectedAgent} />
       {selectedAgent && ( <AgentModal agent={selectedAgent} onClose={() => setSelectedAgent(null)}/>)}
-      <p class="copy-right">© 2026 Lisa YOUS. Tous droits réservés.</p>
+      <p className="copy-right">© 2026 Lisa YOUS. Tous droits réservés.</p>
     </div>
   )
 }

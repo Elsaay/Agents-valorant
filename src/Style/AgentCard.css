@@ -11,11 +11,7 @@
 
 .agent-card:hover {
   box-shadow: 0 10px 25px #ffffffa4;
-  /* transform: scale(1.08);
-  transform: translateY(-10px) scale(1.03); */
-  /* transform: translateY(-10px) scale(1.03);
-  border-color: #ff4655;
-  box-shadow: 0 15px 40px rgba(255, 70, 85, 0.35); */
+  cursor:pointer;
 }
 
 .agent-card img {
