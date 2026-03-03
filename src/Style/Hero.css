@@ -1,13 +1,10 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
-  /* background: radial-gradient( rgb(27 17 54 / 90%) 0%, rgb(27 8 76 / 95%) 40%, rgba(5, 2, 15, 1) 100%);
-  background: radial-gradient(rgb(35 26 60 / 88%) 0%, rgb(1 11 81 / 95%) 40%, rgb(7 2 22) 100%); */
   background: linear-gradient(90deg,rgba(217, 201, 239, 1) 27%, rgba(48, 4, 120, 1) 99%);
 }
 
@@ -111,6 +108,6 @@
     transform: translateY(100vh) translateX(0);
   }
   100% {
-    transform: translateY(-10vh) translateX(50px);
+    transform: translateY(-100vh) translateX(50px);
   }
 }
