@@ -1,7 +1,7 @@
 /* html, body {
   overflow-x: hidden;
 } */
- html, body {
+ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -14,7 +14,7 @@ body{
     background:linear-gradient(90deg, rgb(94 86 12) 0%, rgb(70 9 21) 50%, rgb(18 7 56) 100%);
     background: linear-gradient(90deg,rgba(217, 201, 239, 1) 27%, rgba(48, 4, 120, 1) 99%);
 }
-.container{padding-top: 0px;}
+.container{padding-top: 0px;overflow: hidden;}
 h2{
     text-align: center;
     margin: 80px auto;
